@@ -11,9 +11,6 @@ Törekedj rá, hogy ezt valamilyen általános megoldással érd el!
 A beérkező HTTP kéréseket logold, az útvonalban szereplő ID-val (ha van) és a body-ban szereplő adatokkal (szintúgy, ha
 vannak)!
 
-A feladat NEM a vizsga nehézségét tükrözi, ez egy nagyon nagy feladat, hogy ha tudtok, akkor legyen mivel gyakorolni a
-vizsgára :)
-
 ---
 
 ### Repülőgép
