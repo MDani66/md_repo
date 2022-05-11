@@ -1,0 +1,607 @@
+{
+	"info": {
+		"_postman_id": "965f7fbf-9693-484c-8e88-dc1dce85e03c",
+		"name": "AirportApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CreateAirplane",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"identifier\": \"Danigép\",\r\n    \"producer\": \"KABAL\",\r\n    \"type\": \"PRIVATE\",\r\n    \"numberOfSeats\": 111\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/airportapp/airplanes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"airportapp",
+						"airplanes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateAirplane2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"identifier\": \"Danigép\",\r\n    \"producer\": \"KABAL\",\r\n    \"type\": \"PRIVATE\",\r\n    \"numberOfSeats\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/airportapp/airplanes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"airportapp",
+						"airplanes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListAllAirplanes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/airportapp/airplanes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"airportapp",
+						"airplanes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindAirplaneById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/airportapp/airplanes/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"airportapp",
+						"airplanes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteAirplane",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/airportapp/airplanes/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"airportapp",
+						"airplanes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ModifyAirplane",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"identifier\": \"VivcsiGép\",\r\n    \"producer\": \"KABAL\",\r\n    \"type\": \"SMALL\",\r\n    \"numberOfSeats\": 22\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/airportapp/airplanes/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"airportapp",
+						"airplanes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddAirport",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"identifier\": \"Bobo\",\r\n    \"name\": \"Romai reptér\",\r\n    \"city\": \"Roma\",\r\n    \"country\": \"Olaszország\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/airportapp/airports",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"airportapp",
+						"airports"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddAirport2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"identifier\": \"Dani\",\r\n    \"name\": \"Korda Gyuri Reptér\",\r\n    \"city\": \"Budapest\",\r\n    \"country\": \"Hungary\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/airportapp/airports",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"airportapp",
+						"airports"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListAllAirports",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/airportapp/airports",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"airportapp",
+						"airports"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAirportById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/airportapp/airports/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"airportapp",
+						"airports",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ModifyAirport",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"identifier\": \"Toto\",\r\n    \"name\": \"Romai reptér\",\r\n    \"city\": \"Roma\",\r\n    \"country\": \"Olaszország\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/airportapp/airports/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"airportapp",
+						"airports",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteAirport",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/airportapp/airports/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"airportapp",
+						"airports",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SaveFlight",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"identifier\": \"Flight1\",\r\n    \"airplaneId\": 1,\r\n    \"startAirportId\": 1,\r\n    \"landingAirportId\": 2,\r\n    \"timeOfDeparture\": \"2022-06-05T12:59:11.332\",\r\n    \"timeOfLanding\": \"2022-06-06T12:59:11.332\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/airportapp/flights",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"airportapp",
+						"flights"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SaveFlight2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"identifier\": \"Kicsi\",\r\n    \"airplaneId\": 2,\r\n    \"startAirportId\": 2,\r\n    \"landingAirportId\": 1,\r\n    \"timeOfDeparture\": \"2022-06-05T12:59:11.332\",\r\n    \"timeOfLanding\": \"2022-07-04T12:59:11.332\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/airportapp/flights",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"airportapp",
+						"flights"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListFlights",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/airportapp/flights",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"airportapp",
+						"flights"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetFlightById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/airportapp/flights/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"airportapp",
+						"flights",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ModifyFlight",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"timeOfDeparture\": \"2022-10-05T12:59:11.332\",\r\n    \"timeOfLanding\": \"2022-10-10T12:59:11.332\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/airportapp/flights/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"airportapp",
+						"flights",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CancelFlight",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/airportapp/flights/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"airportapp",
+						"flights",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BuyTicket",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Bobi\",\r\n    \"email\": \"piri@gmail.hu\",\r\n    \"flightId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/airportapp/flights/ticketbookings",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"airportapp",
+						"flights",
+						"ticketbookings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BuyTicket2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Momo\",\r\n    \"email\": \"piri@gmail.hu\",\r\n    \"flightId\": \"2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/airportapp/flights/ticketbookings",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"airportapp",
+						"flights",
+						"ticketbookings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListAllTickets",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/airportapp/flights/ticketbookings",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"airportapp",
+						"flights",
+						"ticketbookings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteTicket",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/airportapp/flights/ticketbookings/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"airportapp",
+						"flights",
+						"ticketbookings",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindTicketByID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/airportapp/flights/ticketbookings/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"airportapp",
+						"flights",
+						"ticketbookings",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
